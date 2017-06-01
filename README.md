@@ -1,12 +1,12 @@
 # Cisco cloud corner on AWS Lambda
 AWS Lambda lets you run code without provisioning or managing servers
 
-## Serverless Frameworks:
+## Serverless Frameworks
 - [Serverless](https://serverless.com)
 - [Claudia.js](https://claudiajs.com)
 - [Apex](apex.run)
 
-## Serverless Meetups:
+## Serverless Meetups
 - [Paris Serverless Architecture Meetup](https://www.meetup.com/Paris-Serverless-Architecture-Meetup)
 
 ## Create a lambda function
@@ -58,7 +58,28 @@ When the Lambda function has been created
     - LastName: **Enter your last name**
 1. Click **Save**
 1. Retry the API Gateway URL
+
 The following message is displayed:
 ```
 {"Items":[{"UserID":"1","LastName":"ARQUES"}],"Count":1,"ScannedCount":1}
 ```
+
+Congratulations : We have created your first  API Gateway end point and your first lambda function that interacts with DynamoDB
+
+Next steps:
+1. Install postman add-on
+1. Copy/Paste the API Gateway URL of your Lambda function into postman
+1. Select the **POST** HTTP method
+1. Copy/Paste into the body of the POST request:
+  ```
+  {
+      "Item": {
+       "ID": "10",
+       "LastName": "CLOUD GUY"
+      },
+      "CloudCorner": "TEST"
+  }  
+  ```
+1. Send the Request
+1. From the AWS console, go to **Database** -> **DynamoDB**
+1. Select **CloudCorner** table and check that your item has been added

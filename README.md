@@ -1,15 +1,15 @@
 # Cisco cloud corner on AWS Lambda
 AWS Lambda lets you run code without provisioning or managing servers
 
-Serverless Frameworks:
+## Serverless Frameworks:
 - [Serverless](https://serverless.com)
 - [Claudia.js](https://claudiajs.com)
 - [Apex](apex.run)
 
-Serverless Meetups:
+## Serverless Meetups:
 - [Paris Serverless Architecture Meetup](https://www.meetup.com/Paris-Serverless-Architecture-Meetup)
 
-
+## Create a lambda function
 1. From the AWS console, go to **Compute** -> **Lambda**
 1. Click **Create a Lambda function**
 1. Select **microservice-http-endpoint** blueprint
@@ -24,6 +24,7 @@ Serverless Meetups:
 1. Click **Next**
 1. Click **Create function**
 
+## Trigger a lambda function using API Gateway
 When the Lambda function has been created
 1. Goto **Trigger** tab and click to the API Gateway URL.
 

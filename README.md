@@ -6,6 +6,14 @@ AWS Lambda lets you run code without provisioning or managing servers
 - [Claudia.js](https://claudiajs.com)
 - [Apex](apex.run)
 
+## Serverless articles
+http://blog.d2-si.fr/2017/05/31/monitoring-aws-lambda/
+https://read.acloud.guru/serverless/home
+
+## Serverless projects
+- [Serverless chat](https://github.com/claudiajs/serverless-chat)
+- [Claudia Bot Builder](https://github.com/claudiajs/claudia-bot-builder)
+
 ## Serverless Meetups
 - [Paris Serverless Architecture Meetup](https://www.meetup.com/Paris-Serverless-Architecture-Meetup)
 

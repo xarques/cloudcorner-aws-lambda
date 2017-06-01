@@ -74,10 +74,10 @@ Next steps:
   ```
   {
       "Item": {
-       "ID": "10",
+       "UserId": "10",
        "LastName": "CLOUD GUY"
       },
-      "CloudCorner": "TEST"
+      "TableName": "CloudCorner"
   }  
   ```
 1. Send the Request

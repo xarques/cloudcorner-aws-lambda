@@ -24,7 +24,7 @@ AWS Lambda lets you run code without provisioning or managing servers
 1. Click **Next**
 1. Click **Create function**
 
-## Trigger a lambda function using API Gateway
+## Read an item into DynamoDB using API Gateway and your lambda function
 When the Lambda function has been created
 1. Goto **Trigger** tab and click to the API Gateway URL.
 
@@ -66,7 +66,7 @@ The following message is displayed:
 
 Congratulations : We have created your first  API Gateway end point and your first lambda function that interacts with DynamoDB
 
-Next steps:
+## Insert an item into DynamoDB using API Gateway and your lambda function
 1. Install postman add-on
 1. Copy/Paste the API Gateway URL of your Lambda function into postman without query parameter
 1. Select the **POST** HTTP method

@@ -11,15 +11,15 @@ AWS Lambda lets you run code without provisioning or managing servers
 
 ## Create a lambda function
 1. From the AWS console, go to **Compute** -> **Lambda**
-1. Click **Create a Lambda function**
+1. Click **Get Started Now** if this is the first time you create a Lambda function or **Create a Lambda function**
 1. Select **microservice-http-endpoint** blueprint
 1. Enter:
-    - Security: **Open**
+    - Security: **Open** (I know! It's bad)
 1. Click **Next**
 1. Enter:
-    - Section **Configure function**
+    - In Section Configure function:
     - Name: **LambdaNodeJsToDynamoDB**
-    - Section **Lambda function handler and role**
+    - In Section Lambda function handler and role:
     - Role Name: **AccessToDynamoDB**
 1. Click **Next**
 1. Click **Create function**
@@ -53,7 +53,7 @@ When the Lambda function has been created
 1. Select the **CloudCorner** table
 1. Go to folder **Items** and select **Create Item**
 1. Enter:
-    - UserId: **1**
+    - UserID: **1**
 1. Click on + -> Append -> String. Enter:
     - LastName: **Enter your last name**
 1. Click **Save**
@@ -68,13 +68,13 @@ Congratulations : We have created your first  API Gateway end point and your fir
 
 Next steps:
 1. Install postman add-on
-1. Copy/Paste the API Gateway URL of your Lambda function into postman
+1. Copy/Paste the API Gateway URL of your Lambda function into postman without query parameter
 1. Select the **POST** HTTP method
 1. Copy/Paste into the body of the POST request:
   ```
   {
       "Item": {
-       "UserId": "10",
+       "UserID": 10,
        "LastName": "CLOUD GUY"
       },
       "TableName": "CloudCorner"
@@ -83,3 +83,11 @@ Next steps:
 1. Send the Request
 1. From the AWS console, go to **Database** -> **DynamoDB**
 1. Select **CloudCorner** table and check that your item has been added
+1. You can also perform the GET request into postman or your web browser by adding query parameter **TableName** with value **CloudCorner**
+
+## Cleanup
+1. Delete the **CloudCorner** DynamoDB table
+1. Delete the **LambdaMicroservice** API Gateway
+1. Delete the **LambdaNodeJsToDynamoDB** Lambda function
+1. Delete the **AccessToDynamoDB** IAM Role
+1. Delete the **/aws/lambda/LambdaNodeJsToDynamoDB** CloudWatch log group

@@ -10,6 +10,7 @@ AWS Lambda lets you run code without provisioning or managing servers
 - http://blog.d2-si.fr/2017/05/31/monitoring-aws-lambda/
 - https://read.acloud.guru/serverless/home
 - https://medium.com/search?q=serverless%20aws
+- [Choosing a Microservices Deployment Strategy](https://www.nginx.com/blog/deploying-microservices/?utm_source=event-driven-data-management-microservices&utm_medium=blog)
 
 ## Serverless projects
 - [Serverless chat](https://github.com/claudiajs/serverless-chat)

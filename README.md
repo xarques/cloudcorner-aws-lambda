@@ -19,6 +19,16 @@ AWS Lambda lets you run code without provisioning or managing servers
 ## Serverless Meetups
 - [Paris Serverless Architecture Meetup](https://www.meetup.com/Paris-Serverless-Architecture-Meetup)
 
+## Serverless resources
+The following tutorial can be done manually or run within serverless.com framework.
+
+To install and use the serverless framework:
+```
+npm install -g serverless
+npm install
+serverless deploy
+```
+
 ## Create a lambda function
 1. From the AWS console, go to **Compute** -> **Lambda**
 1. Click **Get Started Now** if this is the first time you create a Lambda function or **Create a Lambda function**

@@ -1,0 +1,22 @@
+{
+  "name": "cloudcorner-aws-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda lets you run code without provisioning or managing servers",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xarques/cloudcorner-aws-lambda.git"
+  },
+  "dependencies": {
+    "dynamodb-doc": "^1.0.0"
+  },
+  "author": "Xavier Arques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xarques/cloudcorner-aws-lambda/issues"
+  },
+  "homepage": "https://github.com/xarques/cloudcorner-aws-lambda#readme"
+}
